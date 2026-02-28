@@ -1,6 +1,6 @@
 # HackUDC2026
 
-**Descripción**
+## Descripción
 
 Nuestro proyecto busca mostrar la información sobre el clima (altura de las olas, temperatura y velocidad) en algunos puertos de galicia
 
