@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Nuestro proyecto busca mostrar la información sobre el clima (altura de las olas, temperatura y velocidad) en algunos puertos de galicia
+Nuestro proyecto busca mostrar la información sobre el clima (altura de las olas, temperatura y velocidad) en algunos puertos de galicia, además de los peces que se podrían atrapar en dichos lugares
 
 ## Tecnologías Utilizadas
 
