@@ -15,7 +15,7 @@ Meteogalicia: fuente de la información
 
 ## Características Principales
 
-Interfaz simple e intuitiva para la interacción del usuario.
+Interfaz simple e intuitiva para el usuario.
 
 Gráficación clara
 
