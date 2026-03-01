@@ -2,15 +2,15 @@
 
 ## Descripción
 
-  Nuestro proyecto: PeixeAlert, se trata de un asistente inteligente de Telegram diseñado para los pescadores de Galicia, el cual centraliza datos de MeteoGalicia para ofrecer estados del mar, mareas y recomendaciones de pesca personalizadas según las condiciones actuales.
+  Nuestro proyecto: PeixeAlert, se trata de un asistente inteligente de Telegram diseñado para los pescadores particulares de Galicia, el cual centraliza datos de MeteoGalicia para ofrecer estados del mar, clima y recomendaciones de pesca personalizadas según las condiciones actuales.
 
-  Está caracterizado por poder seleccionar el puerto específico (Ferrol, Vigo...); dar detalles sobre el estado del mar (oleaje, viento...). generando sus respectivas tablas de datos e indicadores de aguja, además de puntuar de 0 a 100 la calidad del día para la pesca; y por recomendar las especies presentes ese día según las condiciones anteriores.
+  Está caracterizado por poder seleccionar el puerto específico (Ferrol, Vigo...); dar detalles sobre el estado del mar (oleaje, viento...). generando sus respectivas tablas de datos, además de estimsar la calidad del día para la pesca; y por recomendar las especies presentes ese día según las condiciones anteriores.
 
 ## Tecnologías Utilizadas
 
 Python: Lenguaje principal encargado de la lógica del bot, procesamiento de datos y comunicación con APIs.
 
-Grafana cloud: Entorno de visualización avanzado donde se generan los gráficos temporales y los indicadores de aguja para el monitoreo de oleaje y viento.
+Grafana cloud: Entorno de visualización avanzado donde se generan los gráficos temporales y los indicadores de aguja para el monitoreo de oleaje, viento y temperatura.
 
 MeteoGalicia API: Fuente oficial de datos que proporciona información precisa sobre predicción numérica y mareas en la costa gallega.
 
@@ -18,7 +18,7 @@ MeteoGalicia API: Fuente oficial de datos que proporciona información precisa s
 
 Interfaz Intuitiva: Menús basados en botones que eliminan la necesidad de memorizar comandos complejos.
 
-Graficación clara: Integración de paneles visuales que muestran la evolución histórica de las olas y el viento, junto con valores actuales en formato dial.
+Graficación clara: Integración de paneles visuales que muestran la evolución histórica de las olas y el viento.
 
 Algoritmo de recomendación: Lógica programada que filtra especies según parámetros biológicos y meteorológicos.
 
@@ -30,7 +30,7 @@ Algoritmo de recomendación: Lógica programada que filtra especies según pará
 
 ## Incidencias
 
-Aunque en el estado actual todo funciona correctamente, aunque al final por alguna razon el bot no muestra los datos, a lo largo del proyecto se nos presentaron algunos problemas como:
+Aunque en el estado actual todo funciona correctamente,  a lo largo del proyecto se nos presentaron algunos problemas como:
 
 1.- Error inseperado al reanudar el proyecto durante la revisión final que acabó solucionándose solo.
 2.- Dificultad para encontrar las ID de los puertos de Galicia.
