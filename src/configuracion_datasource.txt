@@ -1,0 +1,63 @@
+============================================================
+           PROYECTO: PEIXEALERT (REPLICABLE)
+============================================================
+
+Este proyecto monitoriza las condiciones marítimas de Galicia 
+y predice capturas de pesca mediante la integración de la 
+API de MeteoGalicia, Grafana y un Bot de Telegram.
+
+------------------------------------------------------------
+1. ESTRUCTURA DE ARCHIVOS
+------------------------------------------------------------
+- PeixeGalicia.py: Motor del bot en Python (Lógica biológica).
+- PeixeAlert-1772454823137.json: Configuración del Dashboard.
+- CONFIGURACION.txt: Este manual técnico.
+
+------------------------------------------------------------
+2. CONFIGURACIÓN DEL DATA SOURCE EN GRAFANA
+------------------------------------------------------------
+Para que los paneles funcionen, se debe crear un Data Source 
+con los siguientes parámetros exactos:
+
+- Tipo: JSON API (Plugin de Marcus Olsson)
+- URL: https://servizos.meteogalicia.gal/apiv5/getNumericForecastInfo
+- Auth: No Authentication
+- Headers:
+    - Accept: application/json
+- Additional Settings:
+    - Query string: limit=100
+
+------------------------------------------------------------
+3. VARIABLES DEL DASHBOARD
+------------------------------------------------------------
+El dashboard utiliza una variable personalizada llamada 'puerto'. 
+Al importar el JSON, asegúrate de que estas opciones estén 
+configuradas:
+
+- Marín: 1000091
+- Vigo: 1000259
+- Coruña: 1002240
+- Vilagarcía: 1001597
+- Ferrol: 1002284
+
+------------------------------------------------------------
+4. CREDENCIALES (API TOKENS)
+------------------------------------------------------------
+Para que el script de Python funcione, rellena estas constantes:
+
+- TOKEN_METEOGALICIA: O7d8a21OKeGZ20z9xN5YyMK4JM3U42sUq6MCpy8Jo90H9l3Y8We42Bpk8SMp5O9z
+- API_KEY_GRAFANA (Service Account): glsa_WLhnhkhHJvcBCnF4i77fD2RSRDI47vPl_5eee0872
+- TOKEN_TELEGRAM: 8736047897:AAGQGwk6vYb-JDrAftJtjNjXH7X3vuIkU8g
+- DASHBOARD_UID: mac9q76
+
+------------------------------------------------------------
+5. REQUISITOS DE INSTALACIÓN
+------------------------------------------------------------
+Instalar dependencias de Python:
+$ pip install python-telegram-bot requests
+
+Instalar Plugins en Grafana:
+- JSON API (marcusolsson-json-datasource)
+- Image Renderer (para el envío de capturas al bot)
+
+============================================================
